@@ -13,13 +13,15 @@ def fibonacci(n):
       A list containing the Fibonacci sequence up to n terms.
   """
   if n <= 1:
-    # Complete here
+    # Completed
+    return n
   else:
-    a, b = # complete here
+    a, b = 0,1 # completed
     for _ in range(2, n + 1):
       c = a + b
-      # Complete here
-    return # add the variable to be returned
+      a,b=b,c
+      # Completed
+    return b # add the variable to be returned -is added
 
 # Get the number of terms from the user
 num_terms = int(input("Enter the number of terms: "))
